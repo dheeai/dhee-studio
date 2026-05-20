@@ -6,8 +6,10 @@ Dhee Studio is available for Windows and macOS from the official website:
 
 ## Installation Guides
 
-- [Windows Installation](#windows-installation)
-- [macOS Installation](#macos-installation)
+Open the guide for your operating system:
+
+<details open>
+<summary><strong>Windows Installation</strong></summary>
 
 ## Windows Installation
 
@@ -54,6 +56,11 @@ When installation is complete, launch Dhee Studio from the Windows Start menu or
 
 ![Dhee Studio landing screen](mac-terminal/image.png)
 
+</details>
+
+<details>
+<summary><strong>macOS Installation</strong></summary>
+
 ## macOS Installation
 
 The current macOS app is not notarized yet. Because of that, macOS may block the app or show a warning such as "`Dhee` is damaged and can't be opened." If you downloaded Dhee Studio from the official website, follow the steps below to install it and remove the quarantine flag.
@@ -97,3 +104,5 @@ Terminal does not show password characters while you type. This is normal.
 After the command finishes, open Dhee from the Applications folder.
 
 ![Dhee Studio landing screen](mac-terminal/image.png)
+
+</details>
