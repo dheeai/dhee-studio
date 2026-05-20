@@ -1,8 +1,13 @@
 # Dhee Studio
 
-Dhee Studio is available for Windows from the official website:
+Dhee Studio is available for Windows and macOS from the official website:
 
 [Download Dhee Studio](https://dhee.studio/)
+
+## Installation Guides
+
+- [Windows Installation](#windows-installation)
+- [macOS Installation](#macos-installation)
 
 ## Windows Installation
 
@@ -43,6 +48,52 @@ Keep the default install location unless you need to choose a different folder, 
 
 ![Dhee Setup choose install location screen](windows/Step-5.png)
 
-## Launch Dhee Studio
+### 6. Launch Dhee Studio
 
 When installation is complete, launch Dhee Studio from the Windows Start menu or from the installed shortcut.
+
+![Dhee Studio landing screen](mac-terminal/image.png)
+
+## macOS Installation
+
+The current macOS app is not notarized yet. Because of that, macOS may block the app or show a warning such as "`Dhee` is damaged and can't be opened." If you downloaded Dhee Studio from the official website, follow the steps below to install it and remove the quarantine flag.
+
+### 1. Open the downloaded DMG
+
+After downloading Dhee Studio, open Finder, go to your Downloads folder, and double-click the `Dhee-mac-arm64.dmg` file.
+
+![Dhee Studio DMG in the macOS Downloads folder](mac-terminal/Step-1.png)
+
+### 2. Move Dhee to Applications
+
+Drag the **Dhee** app icon into the **Applications** folder.
+
+![Dhee app copied from the DMG to Applications](mac-terminal/Step-2.png)
+
+> **Note:** If you try to open Dhee before running the terminal command below, macOS may show a warning that "`Dhee` is damaged and can't be opened." Do not move it to Trash. Continue with the next steps.
+
+![macOS damaged app warning for Dhee](mac-terminal/Warning.png)
+
+### 3. Open Terminal
+
+Open the macOS Terminal app and enter this command:
+
+```bash
+sudo xattr -dr com.apple.quarantine "/Applications/Dhee.app"
+```
+
+![Terminal command to remove the Dhee quarantine flag](mac-terminal/Step-3.png)
+
+### 4. Enter your Mac password
+
+Press **Return**. Terminal may ask for your Mac password. Type your password and press **Return** again.
+
+Terminal does not show password characters while you type. This is normal.
+
+![Terminal password prompt for the quarantine command](mac-terminal/Step-4.png)
+
+### 5. Launch Dhee Studio
+
+After the command finishes, open Dhee from the Applications folder.
+
+![Dhee Studio landing screen](mac-terminal/image.png)
