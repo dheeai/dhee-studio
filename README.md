@@ -67,7 +67,7 @@ The current macOS app is not notarized yet. Because of that, macOS may block the
 
 ### 1. Open the downloaded DMG
 
-After downloading Dhee Studio, open Finder, go to your Downloads folder, and double-click the `Dhee-mac-arm64.dmg` file.
+After downloading Dhee Studio, open Finder, go to your Downloads folder, and double-click the `Dhee-0.1.0-arm64.dmg` file.
 
 ![Dhee Studio DMG in the macOS Downloads folder](mac-terminal/Step-1.png)
 
